@@ -1,0 +1,172 @@
+:root {
+  --primary-color:white;
+  --secondary-color:white;
+  --grey-border: rgba(210, 210, 210, 0.75);
+}
+.dark-theme{
+  --primary-color:black;
+  --secondary-color:pink;  
+}
+body {
+  background-color: var(--primary-color);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn {
+  color: white;
+  cursor:pointer;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  background-color: green;
+  border: none;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+h2,
+p {
+  margin: 0;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 2rem;
+  background: var(--secondary-color);
+  padding: 3rem;
+  height: 50%;
+  width: 60%;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+  max-width: 30rem;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  
+}
+.input-field {
+  background-color: var(--secondary-color);
+  width: 100%;
+  border: 0.06rem solid black;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+}
+input[type="text"]::placeholder {
+  color: black;
+}
+.todo-container {
+  display: flex;
+  gap: 1rem;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.3rem;
+}
+#todoList p {
+  display: flex;
+  gap: 1rem;
+  color: black;
+  align-items: center;
+}
+#todoList .disabled {
+  color: grey;
+}
+.disabled {
+  display: flex;
+  text-decoration: line-through;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+input[type="checkbox"]::before {
+  content: "\2713";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.7rem;
+  text-align: center;
+  border: 0.06rem solid black;
+  border-radius: 50%;
+  color: transparent;
+}
+input[type="checkbox"]:checked::before {
+  color: white;
+  background-color:green;
+  border: 0.06rem solid green;
+  border-radius: 50%;
+}
+.counter {
+  border: 0.06rem solid black;
+}
+.counter-container {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.counter-container p {
+  align-self: center;
+}
+.counter-container button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+}
+.footer {
+  display: flex;
+  gap: 1.8rem;
+  background-color: var(--secondary-color);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+}
+.made-by,
+.author {
+  font-size: 0.9rem;
+}
+.made-by {
+  color: black;
+}
+.author {
+  color: black;
+  font-weight: bold;
+}
+.scroll {
+  height: 15rem;
+  scrollbar-width: thin;
+}
+.scroll::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 0.5rem;
+}
+.scroll::-webkit-scrollbar-track {
+  display: none;
+}
+#icon{
+  width: 50px;
+  cursor: pointer;
+  align-self:flex-end;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}

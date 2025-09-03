@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>To-Do List</title>
+    <link rel="icon" href="https://www.bing.com/th/id/OIP.eMJFq-EUhV8MVUcsK9XlvwHaHa?w=184&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2">
+  </head>
+  <body>
+    <section class="todo">
+      <center><h2>TO-DO LIST</h2></center>
+      <img src="https://up.yimg.com/ib/th/id/OIP.G_ET1VNqWngVk1eSPyRSzwHaHa?pid=Api&rs=1&c=1&qlt=95&w=121&h=121" id="icon">
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
+        <button class="btn">Add</button>
+      </div>
+      <ul class="scroll">
+        <li id="todoList"></li>
+      </ul>
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteButton">Delete All</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p class="made-by">Made By</p>
+        <p class="author">Tharoon</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
